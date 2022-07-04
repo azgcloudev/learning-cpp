@@ -30,7 +30,7 @@
 				"-g",
 				"${file}",
 				"-o",
-				"${fileDirname}/${fileBasenameNoExtension}"
+				"${fileDirname}/buid/${fileBasenameNoExtension}"
 			],
 			"options": {
 				"cwd": "${fileDirname}"
