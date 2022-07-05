@@ -65,3 +65,35 @@ Dog morgan; //Dog is a type define by us
     int result = number1 + total; //result will be undefined
     ```
 # Safe conversions
+No data is loss in safe conversions:
+```cpp
+char c1 = 'z';
+int i1 = c1;
+char c2 = i1;
+cout << c1 << " " << i1 << " " << c2 << 'n\';
+//output is: z 122 z
+```
+
+The following are safe conversions:
+- bool to char
+- bool to int
+- bool to double
+- char to int
+- char to double
+- int to double
+
+# Unsafe conversions
+The value from the original type might differ to the target type, unsafe conversions:
+- doouble to int
+- double to char
+- double to bool
+- int to char
+- int to bool
+- char to bool
+
+Placing a bigger value to a type that has no capacity example double into int, or int into char; the value is narrowed.
+C++11 introduced initialization notationm which allow the compiler to tell if the conversion requires narrowing. Use {} instead of the assigment = 
+```cpp
+double x {2.7}; // universal and uniform initialization
+int y {x};
+```
