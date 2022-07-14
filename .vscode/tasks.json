@@ -38,11 +38,31 @@
 			"problemMatcher": [
 				"$gcc"
 			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang++"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe build active file",
+			"command": "C:\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\build\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
 			"group": {
 				"isDefault": true,
 				"kind": "build"
-			},
-			"detail": "compiler: /usr/bin/clang++"
+			}
+			"detail": "compiler: C:\\mingw64\\bin\\g++.exe"
 		}
 	]
 }
